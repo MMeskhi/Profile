@@ -32,3 +32,27 @@ function changeBg() {
   }
   setTimeout("changeBg()", 5000);
 }
+
+///Skills Bar
+const skills = document.querySelectorAll("#skills-bar");
+const skillsScreen = document.querySelector(".skills-cont");
+
+const animate = function (el) {
+  el.animate(
+    [
+      {
+        width: 0,
+      },
+      {
+        width: el.getAttribute("data-percentage"),
+      },
+    ],
+    {
+      duration: 2000,
+      easing: "ease-out",
+    }
+  );
+  el.style.width = el.getAttribute("data-percentage");
+};
+
+Array.from(skills).forEach(animate);

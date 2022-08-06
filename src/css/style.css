@@ -7,7 +7,7 @@
 html, body {
     font-family: "";
     line-height: 1.5;
-    background-color: #F6F8F9;
+    background-color: #ffffff;
 }
 
 a {
@@ -135,11 +135,12 @@ header {
     width: 100%;
     border-radius: 50%;
     margin-right: 50px;
+    transition: all 0.2s ease;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img:hover {
-    box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.1);
 }
 
 .profileBg {
@@ -272,6 +273,7 @@ header {
     border: none;
     cursor: pointer;
     margin-top: 60px;
+    transition: all 0.3s ease;
 }
 
 .info-about button:hover {
@@ -282,4 +284,60 @@ header {
     max-width: 318px;
     width: 100%;
     margin-left: 60px;
+
+    font-size: 20px;
+}
+
+.percentage {
+    color: #E93656;
+}
+
+.info-skills .profile-socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-skills .profile-socials a {
+    height: 50px;
+    width: 50px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 0;
+    margin-right: 5px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.info-skills .profile-socials a:hover {
+    background-color: #15263E;
+    opacity: 100%;
+}
+
+i {
+    transition: all 0.5s ease;
+}
+
+.info-skills .profile-socials a:hover i {
+    color: #ffffff;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skills .skills-bg {
+    width: 100%;
+    border-radius: 6px;
+    background-color: #F0F0F0;
+    height: 8px;
+    margin-top: 10px;
+}
+
+#skills-bar {
+    background-color: #E93656;
+    height: 8px;
+    border-radius: 10px;
+    text-align: center;
 }
