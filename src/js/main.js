@@ -1,3 +1,4 @@
+//
 ///Header Profile Slider
 // function changeBg() {
 //   const images = [
@@ -33,6 +34,7 @@ function changeBg() {
   setTimeout("changeBg()", 5000);
 }
 
+//
 ///Skills Bar
 const skills = document.querySelectorAll("#skills-bar");
 
@@ -63,3 +65,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector(".skills-cont"));
+
+//
+///
