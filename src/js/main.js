@@ -35,7 +35,6 @@ function changeBg() {
 
 ///Skills Bar
 const skills = document.querySelectorAll("#skills-bar");
-const skillsScreen = document.querySelector(".skills-cont");
 
 const animate = function (el) {
   el.animate(
@@ -55,4 +54,12 @@ const animate = function (el) {
   el.style.width = el.getAttribute("data-percentage");
 };
 
-Array.from(skills).forEach(animate);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      Array.from(skills).forEach(animate);
+    }
+  });
+});
+
+observer.observe(document.querySelector(".skills-cont"));
