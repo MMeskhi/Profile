@@ -639,6 +639,7 @@ i {
     width: 100%;
     background-color: #15263E;
     padding: 50px 50px 70px 40px;
+    border-radius: 2px;
 }
 
 .projects-menu span {

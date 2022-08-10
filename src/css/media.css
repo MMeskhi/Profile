@@ -4,6 +4,27 @@
         grid-gap: 10px;
         grid-template-columns: repeat(3, 2fr);
     }
+
+    .projects-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-menu {
+        height: 100px;
+        max-width: 903px;
+        padding: 10px 0 0 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-menu span {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -171,6 +192,18 @@
         margin-left: 0;
         margin-bottom: 15px;
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .projects-menu {
+        max-width: 603px;
+    }
+
+    .projects-menu span {
+        font-size: 13px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -215,6 +248,32 @@
     .services-grid {
         grid-gap: 10px;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 7px;
+    }
+
+    .projects h2 {
+        font-size: 40px;
+    }
+
+    .projects-menu {
+        height: 170px;
+        max-width: 303px;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "all all all";
+    }
+
+    .projects-menu .active {
+        grid-area: all;
     }
 }
 
