@@ -131,6 +131,46 @@
         grid-gap: 40px;
         grid-template-columns: repeat(2, 2fr);
     }
+
+    .services-bottom {
+        min-height: 570px;
+        height: 100%;
+    }
+
+    .services-bottom-cont {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0 20px 0;
+    }
+
+    .reviewer {
+        flex-direction: column-reverse;
+    }
+
+    .dots {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .dot {
+        width: 17px;
+        height: 17px;
+        margin-right: 7px;
+    }
+
+    .review {
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .reviewer-info {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
 }
 
 @media all and (max-width: 768px) {

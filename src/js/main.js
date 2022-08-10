@@ -13,8 +13,6 @@
 // }
 // setInterval(changeBg, 5000);
 
-window.onload = changeBg;
-
 let i = 0;
 let images = [];
 
@@ -33,6 +31,10 @@ function changeBg() {
   }
   setTimeout("changeBg()", 5000);
 }
+
+window.addEventListener("load", function () {
+  changeBg();
+});
 
 //
 ///Skills Bar
@@ -67,4 +69,28 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(document.querySelector(".skills-cont"));
 
 //
-///
+///Review Slider
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+const changeSlide = (n) => {
+  for (slide of slides) {
+    slide.classList.remove("active");
+  }
+  slides[n].classList.add("active");
+};
+
+const changeDot = (n) => {
+  for (dot of dots) {
+    dot.classList.remove("active");
+  }
+  dots[n].classList.add("active");
+};
+
+dots.forEach((slide, iDot) => {
+  slide.addEventListener("click", () => {
+    i = iDot;
+    changeDot(i);
+    changeSlide(i);
+  });
+});

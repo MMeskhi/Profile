@@ -225,7 +225,6 @@ header {
 /* info Section */
 .container-b {
     max-width: 1200px;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -483,4 +482,130 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.services-bottom-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 20px 0 20px;
+    color: #fff;
+}
+
+.services-bottom-slider {
+    max-width: 930px;
+    width: 100%;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review {
+    font-size: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.reviewer-info i {
+    height: 26px;
+    width: 39px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.job {
+    color: #E93656;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.mau-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url(../img/mau-thompson.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #B97679;
+    transition: all 0.5s ease;
+}
+
+.mau-img:hover {
+    background-color: transparent;
+}
+
+.patrick-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url(../img/patrick-bateman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #B97679;
+    transition: all 0.5s ease;
+}
+
+.patrick-img:hover {
+    background-color: transparent;
+}
+
+.ryan-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url(../img/ryan-gosling.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #B97679;
+    transition: all 0.5s ease;
+}
+
+.ryan-img:hover {
+    background-color: transparent;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.dot.active {
+    border: 1px solid #E93656;
 }
