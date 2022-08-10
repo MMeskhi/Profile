@@ -606,6 +606,10 @@ i {
     margin-bottom: 10px;
 }
 
+.dot:hover {
+    border: 1px solid #E93656;
+}
+
 .dot.active {
     border: 1px solid #E93656;
 }
@@ -646,6 +650,10 @@ i {
     margin-bottom: 10px;
 }
 
+.projects-menu span:hover {
+    color: #E93656;
+}
+
 .projects-menu span.active {
     color: #E93656;
 }
@@ -659,6 +667,7 @@ i {
     height: 350px;
     max-width: 300px;
     width: 100%;
+    outline: 1px solid #15263E;
 
     position: relative;
 }
@@ -686,4 +695,24 @@ i {
 
 .project:hover>.hide {
     display: block;
+}
+
+.links a i {
+    color: #E93656;
+    font-size: 25px;
+    margin: 0 10px 25px 0;
+}
+
+.links a i:hover {
+    opacity: 70%;
+}
+
+.hide-info h5 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.hide-info span {
+    color: #DDDDDD;
+    font-size: 11px;
 }
