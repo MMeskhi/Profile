@@ -718,3 +718,104 @@ i {
     color: #DDDDDD;
     font-size: 11px;
 }
+
+/* Articles Section */
+.articles {
+    padding: 100px 0 80px 0;
+}
+
+.articles-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.articles span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2ED279;
+    text-align: center;
+}
+
+.articles h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #2E2E2E;
+    text-align: center;
+}
+
+.articles-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    height: 590px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.article-info {
+    height: 590px;
+    width: 44%;
+    background-color: #FAFAFA;
+}
+
+.article-divider {
+    height: 590px;
+    width: 6.05%;
+    background-color: #15263E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-divider span {
+    font-size: 30px;
+    color: #E93656;
+    white-space: nowrap;
+    text-align: center;
+    cursor: default;
+    transform: rotate(-90deg);
+}
+
+.article-bg {
+    height: 590px;
+    width: 44%;
+    background-color: #E1E0DC;
+}
+
+.a .article-bg {
+    background-image: url(../img/graphic-designer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.b .article-bg {
+    background-image: url(../img/application-design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.c .article-bg {
+    background-image: url(../img/personal-adviser.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
