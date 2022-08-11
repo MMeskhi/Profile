@@ -32,7 +32,7 @@ function changeBg() {
   setTimeout("changeBg()", 5000);
 }
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", (event) => {
   changeBg();
 });
 
