@@ -9,6 +9,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: auto;
     }
 
     .projects-menu {
@@ -272,7 +273,7 @@
             "all all all";
     }
 
-    .projects-menu .active {
+    .projects-menu #all {
         grid-area: all;
     }
 }
