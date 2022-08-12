@@ -719,6 +719,7 @@ i {
     font-size: 11px;
 }
 
+
 /* Articles Section */
 .articles {
     padding: 100px 0 80px 0;
@@ -773,6 +774,64 @@ i {
     height: 590px;
     width: 44%;
     background-color: #FAFAFA;
+    padding: 70px 0 0 25px;
+    text-align: left;
+}
+
+.b .article-info {
+    padding: 70px 25px 0 150px;
+}
+
+.article-info .vector {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-bottom: 34px;
+
+    position: relative;
+}
+
+.b .article-info .vector {
+    background-color: #E93656;
+}
+
+.article-info .vector i {
+    font-size: 30px;
+    color: #DAAE19;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+}
+
+.b .article-info .vector i {
+    color: #ffffff;
+}
+
+.article-info span {
+    font-size: 14px;
+    color: #888888;
+}
+
+.article-info h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.article-info p {
+    color: #494949;
+    max-width: 560px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.article-info a {
+    color: #494949;
+    font-size: 16px;
 }
 
 .article-divider {
@@ -819,3 +878,86 @@ i {
     background-size: cover;
     background-position: center;
 }
+
+
+/* Teams Section*/
+.teams {
+    padding: 100px 0 80px 0;
+}
+
+.teams-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.teams span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2ED279;
+    text-align: center;
+}
+
+.teams h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #2E2E2E;
+    text-align: center;
+}
+
+.teams-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams-vector-info:not(:last-child) {
+    margin-right: 110px;
+}
+
+.teams-vector-info {
+    position: relative;
+}
+
+.teams-vector-info .teams-hide {
+    background-color: #ffffff;
+    border: 3px solid #E93656;
+    height: 179px;
+    width: 207px;
+    cursor: default;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+}
+
+.teams-vector-info span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #161616;
+    margin-bottom: 15px;
+}
+
+.teams-vector-info p {
+    font-size: 13px;
+    color: #626262;
+    height: 63px;
+    width: 164px;
+}
+
+
+.teams-vector-info:hover>.teams-hide {
+    opacity: 1;
+}
+
+
+/* Contact Section*/
