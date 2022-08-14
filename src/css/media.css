@@ -442,4 +442,16 @@
     .info-bottom-contact div span {
         font-size: 8px;
     }
+
+    .contact-cont {
+        max-width: 310px;
+    }
+
+    .footer-cont p {
+        max-width: 350px;
+    }
+
+    .footer-bottom div {
+        max-width: 310px;
+    }
 }
