@@ -133,6 +133,7 @@ const modal = document.querySelector(".modal");
 const close = document.getElementById("modalBtn");
 
 close.addEventListener("click", (e) => {
+  userForm.reset();
   modal.style.display = "none";
 });
 
@@ -178,6 +179,9 @@ function formData(userData) {
     })
     .then((data) => {
       console.log(data);
-      userForm.reset();
+      setTimeout(() => {
+        userForm.reset();
+        modal.style.display = "none";
+      }, 10000);
     });
 }
