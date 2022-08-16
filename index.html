@@ -14,8 +14,9 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Profile - Mikheil Meskhi" />
     <meta property="og:description" content="Profile" />
-    <meta property="og:image" content="src/img/preview.png" />
+    <meta property="og:image" content="src/img/profile.png" />
 
+    <link rel="shortcut icon" href="src/img/profile.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/style.css">
@@ -571,32 +572,47 @@
                 <h2>CONTACT US</h2>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
             </div>
-            <form id="contactForm" class="contact-box" action="users-" method="post" novalidate>
+            <form id="contactForm" class="contact-box" action="http://borjomi.loremipsum.ge/api/send-message"
+                method="post">
                 <div class="contact-formfield">
                     <div class="contact-fields">
                         <div class="name-field form-sizes">
-                            <input id="user_name" type="text" placeholder="Your Name*" required minlength="3">
+                            <input id="userName" type="text" placeholder="Your Name*" required minlength="5"
+                                maxlength="25">
                         </div>
                         <div class="email-field form-sizes">
-                            <input id="user_email" type="email" placeholder="Your Email*" required>
+                            <input id="userEmail" type="email" placeholder="Your Email*" required minlength="5"
+                                maxlength="64">
                         </div>
                         <div class="name-field form-sizes">
-                            <input id="user_website" type="text" placeholder="Your Website*" required minlength="3">
+                            <input id="userWebsite" type="text" placeholder="Your Website*" required minlength="5"
+                                maxlength="64">
                         </div>
                     </div>
                     <div class="contact-message">
                         <div class="message-field">
-                            <input id="user_message" type="text" placeholder="Message*" required minlength="5"
+                            <input id="userMessage" type="text" placeholder="Message*" required minlength="5"
                                 maxlength="500">
                         </div>
                     </div>
-                    <div class="send">
+                    <div class="contact-send">
                         <button id="contactSubmit" type="submit">Send Message</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
+
+    <div class="modal container-b">
+        <div class="modal-cont">
+            <div class="modal-text">
+                <p class="result"></p>
+            </div>
+            <div class="modal-btn">
+                <button type="button" id="modalBtn">Close</button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-cont">

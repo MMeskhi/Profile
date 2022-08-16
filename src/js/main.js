@@ -124,3 +124,60 @@ function changeActivePosition(activeItem) {
   }
   activeItem.classList.add("active");
 }
+
+//
+///Contact
+const contactSubmit = document.getElementById("contactSubmit");
+const result = document.querySelector(".result");
+const modal = document.querySelector(".modal");
+const close = document.getElementById("modalBtn");
+
+close.addEventListener("click", (e) => {
+  modal.style.display = "none";
+});
+
+const userForm = document.getElementById("contactForm");
+const userName = document.getElementById("userName");
+const userEmail = document.getElementById("userEmail");
+const userWebsite = document.getElementById("userWebsite");
+const userMessage = document.getElementById("userMessage");
+
+userForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const userData = {
+    name: userName.value,
+    email: userEmail.value,
+    website: userWebsite.value,
+    message: userMessage.value,
+  };
+  console.log(userData);
+  formData(userData);
+});
+
+function formData(userData) {
+  fetch("http://borjomi.loremipsum.ge/api/send-message", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then(async (response) => {
+      if (response.status == 200) {
+        modal.style.display = "flex";
+        result.innerHTML =
+          "Thank you for getting in touch! <br> We appreciate you contacting us.";
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      modal.style.display = "flex";
+      result.innerHTML = "Something went wrong!";
+      console.log(error);
+    })
+    .then((data) => {
+      console.log(data);
+      userForm.reset();
+    });
+}

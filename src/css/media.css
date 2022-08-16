@@ -23,7 +23,7 @@
     }
 
     .projects-menu span {
-        margin: 0 auto;
+        margin: 0 10px 0 0;
         white-space: nowrap;
     }
 
@@ -285,6 +285,10 @@
     .last {
         display: none;
     }
+
+    .modal {
+        max-width: 600px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -453,5 +457,15 @@
 
     .footer-bottom div {
         max-width: 310px;
+    }
+
+    .modal {
+        height: 250px;
+        max-width: 310px;
+        font-size: 16px;
+    }
+
+    .modal-text {
+        font-size: 16px;
     }
 }
