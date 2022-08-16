@@ -1,17 +1,5 @@
-//
-///Header Profile Slider
-// function changeBg() {
-//   const images = [
-//     'url("src/img/profileimg-1.png")',
-//     'url("src/img/profileimg-2.png")',
-//     'url("src/img/profileimg-3.png")',
-//   ];
-
-// const profileBg = document.querySelector(".profileBg");
-//   const bg = images[Math.floor(Math.random() * images.length)];
-//   profileBg.style.backgroundImage = bg;
-// }
-// setInterval(changeBg, 5000);
+//Header Profile Slider
+window.onload = changeBg;
 
 let i = 0;
 let images = [];
@@ -31,10 +19,6 @@ function changeBg() {
   }
   setTimeout("changeBg()", 5000);
 }
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  changeBg();
-});
 
 //
 ///Skills Bar

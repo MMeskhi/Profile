@@ -413,6 +413,11 @@
         height: calc(179px - 40%);
         width: calc(207px - 40%);
     }
+
+    .teams-vector-info p {
+        font-size: 11px;
+        width: 140px;
+    }
 }
 
 @media all and (max-width: 480px) {
