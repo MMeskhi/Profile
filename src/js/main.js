@@ -140,7 +140,7 @@ userForm.addEventListener("submit", (e) => {
 });
 
 function formData(userData) {
-  fetch("http://borjomi.loremipsum.ge/api/send-message", {
+  fetch("https://borjomi.loremipsum.ge/api/send-message", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
