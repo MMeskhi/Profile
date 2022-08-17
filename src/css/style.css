@@ -568,11 +568,50 @@ i {
     font-size: 28px;
     font-weight: bold;
     white-space: nowrap;
+    width: 200px;
+}
+
+.reviewer-border {
+    height: 160px;
+    max-width: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0;
+    border-radius: 100%;
+}
+
+.reviewer-border:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 100%;
+    border: 2px dashed #ffffff;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.reviewer-border:hover:before {
+    animation: rotate 20s linear infinite;
 }
 
 .mau-img {
     height: 140px;
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
     border-radius: 50%;
     background-image: url(../img/mau-thompson.png);
     background-repeat: no-repeat;
@@ -582,13 +621,10 @@ i {
     transition: all 0.5s ease;
 }
 
-.mau-img:hover {
-    background-color: transparent;
-}
-
 .patrick-img {
     height: 140px;
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
     border-radius: 50%;
     background-image: url(../img/patrick-bateman.png);
     background-repeat: no-repeat;
@@ -598,13 +634,10 @@ i {
     transition: all 0.5s ease;
 }
 
-.patrick-img:hover {
-    background-color: transparent;
-}
-
 .ryan-img {
     height: 140px;
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
     border-radius: 50%;
     background-image: url(../img/ryan-gosling.png);
     background-repeat: no-repeat;
@@ -612,10 +645,6 @@ i {
     background-position: center;
     background-color: #B97679;
     transition: all 0.5s ease;
-}
-
-.ryan-img:hover {
-    background-color: transparent;
 }
 
 .dots {
@@ -1242,7 +1271,7 @@ footer {
     font-family: "Muli";
 }
 
-.footer-bottom .roca {
+.footer-bottom .rosa {
     color: #FFFFFF;
     margin: 0 2px 0 2px;
 }
