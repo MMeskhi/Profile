@@ -200,6 +200,10 @@
         font-size: 11px;
     }
 
+    .info-bottom-contact:not(:last-child) {
+        margin: 0;
+    }
+
     .services-grid {
         grid-gap: 40px;
         grid-template-columns: repeat(2, 2fr);

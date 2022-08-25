@@ -53,6 +53,15 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(document.querySelector(".skills-cont"));
 
 //
+///Hire Me
+const elementToView = document.querySelector(".contact");
+const hireBtn = document.getElementById("hireBtn");
+
+hireBtn.addEventListener("click", function () {
+  elementToView.scrollIntoView();
+});
+
+//
 ///Review Slider
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
