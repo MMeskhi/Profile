@@ -2,6 +2,11 @@
 
 - Profile
 
+### Description
+
+- Fully responsive
+- Personal portfolio template
+
 ### Links
 
 - https://mmeskhi.github.io/Profile
